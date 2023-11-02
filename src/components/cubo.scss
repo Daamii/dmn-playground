@@ -1,0 +1,15 @@
+.cube {
+  display: flex;
+  background-color: beige;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: navy;
+  align-items: center;
+  &__icon {
+    display: flex;
+  }
+  &__text {
+    display: flex;
+  }
+}
