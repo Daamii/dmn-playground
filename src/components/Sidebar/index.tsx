@@ -5,7 +5,7 @@ import "./index.scss";
 
 export interface ActionElement {
   name: string;
-  action: () => void;
+  action?: () => void;
 }
 
 interface Props {
@@ -42,7 +42,11 @@ export const Sidebar: React.FC<Props> = ({
           }`}
         >
           {bodyElements?.map((opt) => (
-            <div onClick={opt?.action} className="sidebar__body__element">
+            <div
+              key={opt.name}
+              onClick={opt?.action}
+              className="sidebar__body__element"
+            >
               {opt?.name}
             </div>
           ))}
