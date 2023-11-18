@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+
+  &__title {
+    text-decoration: underline;
+  }
+  &__title:hover {
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 0.1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    padding-inline-start: 10px;
+
+    li {
+      font-size: 16px;
+    }
+  }
+}

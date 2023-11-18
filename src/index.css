@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(50, 7, 7, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -23,6 +23,10 @@ body {
   min-height: 100vh;
 }
 
+li {
+  list-style: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -38,8 +42,8 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
-  flex-flow: row-reverse;
+  flex-direction: column;
+  /* flex-flow: row-reverse; */
   background-color: white;
   min-width: 90vw;
   min-height: 90vh;
