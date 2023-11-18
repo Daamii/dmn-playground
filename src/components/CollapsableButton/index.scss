@@ -1,0 +1,51 @@
+.cube {
+  margin: 1%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgba($color: #32848fa5, $alpha: 1);
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: navy;
+  align-items: center;
+  overflow: hidden;
+  height: 5rem;
+
+  width: 10rem;
+  transition: width 1s;
+
+  &__no-text {
+    width: 3rem;
+  }
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    height: 40px;
+    width: 40px;
+  }
+  &__text {
+    display: flex;
+
+    &__hidden {
+      opacity: 0;
+      transform: translateX(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 100;
+  }
+  to {
+    translate: 200px;
+    opacity: 0;
+    display: none;
+  }
+}

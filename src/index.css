@@ -35,3 +35,12 @@ body {
     background-color: #f9f9f9;
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+  background-color: white;
+  min-width: 90vw;
+  min-height: 90vh;
+}
