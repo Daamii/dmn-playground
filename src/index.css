@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(50, 7, 7, 0.87);
-  background-color: #242424;
+  background-color: #0f3e4d;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,6 +38,12 @@ li {
   button {
     background-color: #f9f9f9;
   }
+}
+
+h3 {
+  color: white;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 }
 
 .container {

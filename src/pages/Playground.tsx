@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "../../node_modules/react-router-dom/dist/index";
-import { CollapsableButton } from "../components/CollapsableButton/index";
+import { CollapsableButtonExample } from "../components/CollapsableButton/Example";
 import { CollapsableListExample } from "../components/CollapsableList/example";
 
 export const Playground = () => {
   return (
     <>
-      Here is the playground
+      <h3>Here is the playground</h3>
       <div className="container">
-        <CollapsableButton></CollapsableButton>
+        <CollapsableButtonExample />
         <CollapsableListExample />
       </div>
       <Link to="/">{"<"}</Link>

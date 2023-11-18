@@ -9,17 +9,17 @@
   color: navy;
   align-items: center;
   overflow: hidden;
-  height: 5rem;
+  height: 1em;
+  justify-content: space-between;
 
-  width: 10rem;
+  width: 3em;
   transition: width 1s;
 
   &__no-text {
-    width: 3rem;
+    width: 1em;
   }
 
   &__icon {
-    display: flex;
     flex-shrink: 0;
     height: 40px;
     width: 40px;
@@ -30,7 +30,7 @@
     &__hidden {
       opacity: 0;
       transform: translateX(100%);
-      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      transition: opacity 0.25s ease-in-out, transform 0.7s ease-in-out;
     }
   }
 
