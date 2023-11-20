@@ -3,9 +3,10 @@
   flex-direction: column;
   // height: 90vh;
   height: 100%;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 0 25px 0;
   overflow: hidden;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  background-color: var(--background-color);
 
   width: 15vw;
   transition:
@@ -15,7 +16,7 @@
   &--collapsed {
     width: 3em;
     // height: 2.7em;
-    background-color: transparent;
+    // background-color: transparent;
   }
 
   &__header {
@@ -25,7 +26,7 @@
     align-items: center;
     padding: 0.5em;
     padding-right: 1em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--secondary-color);
     font-size: 1.4em;
     font-weight: 700;
     background-color: var(--primary-color);
@@ -51,8 +52,11 @@
   &__body {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    // background-color: white;
+    background-color: var(--background-color);
+    color: white;
     padding: 0.5em;
+
     &--collapsed {
       display: none;
     }
@@ -75,6 +79,7 @@
     margin-top: auto;
     font-size: 1em;
     font-weight: 500;
+    border-top: 1px solid var(--secondary-color);
 
     &--collapsed {
       display: none;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdDensityMedium } from "react-icons/md";
 
 import "./index.scss";

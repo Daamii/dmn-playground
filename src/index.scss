@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(50, 7, 7, 0.87);
-  background-color: #0f3e4d;
+  // background-color: #0f3e4d;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,6 +16,7 @@
 
   --primary-color: #234e70;
   --secondary-color: #fbf8be;
+  --background-color: #237044;
 }
 
 body {
