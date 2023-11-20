@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "../node_modules/react-router-dom/dist/index";
 import "./index.scss";
-import { router } from "./routes";
+import { routes } from "./routes";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={routes} />
   </React.StrictMode>
 );
