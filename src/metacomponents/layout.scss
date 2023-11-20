@@ -1,20 +1,27 @@
 .layout {
   display: flex;
-  flex-direction: row;
-  width: 100vw;
+  flex-direction: column;
   height: 100vh;
-  align-items: center;
-  justify-content: center;
+  width: 100vw;
 
   &__header {
     display: flex;
   }
-  &__sidebar {
-    width: fit-content;
+
+  &__mainframe {
+    display: flex;
+    flex-direction: row;
     height: 100%;
-  }
-  &__content {
-    width: 100%;
-    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &__sidebar {
+      width: fit-content;
+      height: 100%;
+    }
+    &__content {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

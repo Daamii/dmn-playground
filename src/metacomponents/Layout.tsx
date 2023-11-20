@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
+import { Header } from "../components/Header";
 import { ActionElement, Sidebar } from "../components/Sidebar";
 
 import "./layout.scss";
@@ -28,11 +29,16 @@ export const Layout = () => {
 
   return (
     <div className="layout">
-      <div className="layout__sidebar">
-        <Sidebar title={"Playground app"} options={options} footer={footer} />
+      <div className="layout__header">
+        <Header title="title" />
       </div>
-      <div className="layout__content">
-        <Outlet />
+      <div className="layout__mainframe">
+        <div className="layout__mainframe__sidebar">
+          <Sidebar title={"Playground app"} options={options} footer={footer} />
+        </div>
+        <div className="layout__mainframe__content">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
